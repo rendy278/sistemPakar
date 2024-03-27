@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer styles {
+  .mobile-menu {
+    @apply absolute top-16 px-10 right-5 rounded-md flex justify-center items-center flex-col z-10 bg-red-500 text-white gap-5 py-5 opacity-95;
+  }
+}
