@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import Mobilemenu from "./Mobilemenu";
+import Mobilemenu from "../components/MobileMenu";
 import Image from "next/image";
 import { Links } from "../constants/links";
 import Logo from "@/images/cancer-logo.png";
