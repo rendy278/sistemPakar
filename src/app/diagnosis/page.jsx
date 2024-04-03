@@ -60,7 +60,7 @@ const Page = () => {
   };
 
   return (
-    <section className="mx-auto px-5">
+    <section className="mx-auto px-5 py-5">
       <div className="flex flex-col h-screen justify-center gap-4 items-center">
         <Title title="Diagnosis Penyakit Kanker" />
         <p className="text-red-500 font-bold text-center text-xl">

@@ -16,8 +16,8 @@ const Mobilemenu = () => {
           onClick={mobileMenuHandler}
           checked={openMobileMenu ? false : true}
         />
-        <FaBarsStaggered className=" swap-on fill-current w-7 h-7" />
-        <MdOutlineClose className=" swap-off fill-current w-7 h-7" />
+        <FaBarsStaggered className=" swap-on fill-current w-5 h-5" />
+        <MdOutlineClose className=" swap-off fill-current w-5 h-5" />
       </label>
 
       {openMobileMenu ? (

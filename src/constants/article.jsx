@@ -147,3 +147,60 @@ export const Solusi = [
       "Menerapkan kombinasi dari langkah-langkah tersebut dapat membantu mengurangi risiko kanker dan meningkatkan kesehatan secara keseluruhan.",
   },
 ];
+
+export const Gejala = [
+  {
+    id: "1",
+    title: "Perubahan pada kulit: ",
+    gejala:
+      "Perubahan warna, ukuran, atau bentuk tahi lalat atau bintik-bintik pada kulit bisa menjadi gejala kanker kulit.",
+  },
+  {
+    id: "2",
+    title: "Pembengkakan:  ",
+    gejala:
+      "Pembengkakan yang tidak normal pada bagian tubuh tertentu, seperti payudara, kelenjar getah bening, atau perut, bisa menjadi tanda kanker.",
+  },
+  {
+    id: "3",
+    title: "Perubahan pada rasa dan berat badan:   ",
+    gejala:
+      "Penurunan berat badan yang tidak diinginkan dan tanpa penyebab yang jelas, atau kehilangan nafsu makan yang berkelanjutan, dapat menjadi gejala kanker.",
+  },
+  {
+    id: "4",
+    title: "Masalah pencernaan:  ",
+    gejala:
+      "Perubahan pada pola buang air besar atau buang air kecil, seperti diare atau konstipasi yang berkepanjangan, atau darah dalam tinja atau urin, dapat menjadi gejala kanker pada sistem pencernaan atau sistem kemih.",
+  },
+  {
+    id: "5",
+    title: "Kesulitan menelan:   ",
+    gejala:
+      "Kesulitan menelan makanan atau minuman dapat terjadi pada kanker tenggorokan atau kanker esofagus.",
+  },
+  {
+    id: "6",
+    title: "Nyeri yang persisten:  ",
+    gejala:
+      "Nyeri yang tidak hilang atau memburuk seiring waktu, terutama jika terlokalisasi pada satu bagian tubuh, bisa menjadi tanda kanker.",
+  },
+  {
+    id: "7",
+    title: "Kelelahan yang berkepanjangan:   ",
+    gejala:
+      "Kelelahan yang tidak membaik meskipun sudah istirahat cukup bisa menjadi gejala kanker.",
+  },
+  {
+    id: "8",
+    title: "Perubahan pada suara:   ",
+    gejala:
+      "Perubahan suara yang berlangsung lama tanpa penyebab yang jelas, seperti suara serak atau perubahan dalam pitch suara, bisa menjadi tanda kanker pada saluran pernapasan atau tenggorokan.",
+  },
+  {
+    id: "9",
+    title: "Demam yang persisten:  ",
+    gejala:
+      "Demam yang tidak membaik dan berlangsung lama tanpa alasan yang jelas bisa menjadi gejala kanker.",
+  },
+];
