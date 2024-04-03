@@ -16,14 +16,12 @@ const Page = () => {
     e.preventDefault();
     const { name, email, subject, message } = formValues;
 
-    // Cek apakah semua input telah diisi
     if (
       name.trim() === "" ||
       email.trim() === "" ||
       subject.trim() === "" ||
       message.trim() === ""
     ) {
-      // Menampilkan pesan peringatan dengan Sweet Alert jika ada input yang kosong
       Swal.fire({
         icon: "warning",
         title: "Tolong isi semua kolom formulir!",
@@ -33,16 +31,12 @@ const Page = () => {
       return;
     }
 
-    // Buat pesan yang akan dikirim ke WhatsApp
     const whatsappMessage = `Nama: ${name}%0AEmail: ${email}%0AGejala: ${subject}%0APesan: ${message}`;
 
-    // Buat URL WhatsApp dengan nomor tujuan dan pesan yang sudah dibuat
     const whatsappURL = `https://wa.me/+6283122895534?text=${whatsappMessage}`;
 
-    // Buka URL WhatsApp pada tab baru
     window.open(whatsappURL, "_blank");
 
-    // Menampilkan pesan sukses dengan Sweet Alert
     Swal.fire({
       icon: "success",
       title: "Formulir terkirim dengan sukses!",
@@ -99,7 +93,7 @@ const Page = () => {
               placeholder="Your name"
               value={formValues.name}
               onChange={handleChange}
-              className="block w-full rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 p-2 focus:outline-red-500"
+              className=" w-full rounded-md border-0  shadow-sm   placeholder:text-gray-400 p-2 focus:outline-red-500"
             />
             <input
               type="email"
@@ -107,7 +101,7 @@ const Page = () => {
               placeholder="Your email"
               value={formValues.email}
               onChange={handleChange}
-              className="block w-full rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 p-2 focus:outline-red-500"
+              className=" w-full rounded-md border-0  shadow-sm   placeholder:text-gray-400 p-2 focus:outline-red-500"
             />
           </div>
           <input
@@ -116,11 +110,11 @@ const Page = () => {
             placeholder="Subject"
             value={formValues.subject}
             onChange={handleChange}
-            className="block w-full rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 p-2 focus:outline-red-500"
+            className=" w-full rounded-md border-0  shadow-sm   placeholder:text-gray-400 p-2 focus:outline-red-500"
           />
           <textarea
             name="message"
-            className="block w-full rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 p-2 focus:outline-red-500"
+            className=" w-full rounded-md border-0  shadow-sm   placeholder:text-gray-400 p-2 focus:outline-red-500"
             placeholder="Your Message"
             style={{ resize: "none" }}
             cols={5}
@@ -130,7 +124,7 @@ const Page = () => {
           />
           <button
             type="submit"
-            className="w-1/2 bg-red-500 p-2 rounded-md text-gray-50 shadow-lg hover:bg-red-600 duration-500"
+            className="w-1/2 bg-red-500 p-2 rounded-md font-bold text-gray-50 shadow-lg hover:bg-red-600 duration-500"
           >
             Submit
           </button>
