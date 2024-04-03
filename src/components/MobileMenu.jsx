@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 import { Links } from "../constants/links";
 import { useState } from "react";
