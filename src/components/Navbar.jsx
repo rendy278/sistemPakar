@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import Mobilemenu from "./MobileMenu";
+import MobileMenu from "./MobileMenu";
 import Image from "next/image";
 import { Links } from "../constants/links";
 import Logo from "@/images/cancer-logo.png";
@@ -70,7 +70,9 @@ const Navbar = () => {
             );
           })}
         </div>
-          <Mobilemenu />
+        <div className="mt-2">
+          <MobileMenu />
+        </div>
       </nav>
     </header>
   );
