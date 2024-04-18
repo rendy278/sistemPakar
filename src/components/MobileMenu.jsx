@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { Links } from "../constants/links";
 import { useState } from "react";
@@ -21,7 +22,7 @@ const Mobilemenu = () => {
       </label>
 
       {openMobileMenu ? (
-        <div className="mobile-menu ">
+        <div className="mobile-menu">
           {Links.map((link, index) => (
             <Link href={link.route}>{link.label}</Link>
           ))}
