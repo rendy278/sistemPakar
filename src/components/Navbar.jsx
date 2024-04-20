@@ -47,14 +47,12 @@ const Navbar = () => {
         </div>
       )}
       <nav className="flex items-center justify-between">
-        <Link href={"/"} className="flex-1">
-          <div className="flex gap-1 items-center">
-            <h1 className="font-bold text-red-400 lg:text-2xl text-lg">
-              Dīəgnōsəs
-            </h1>
-            <Image src={Logo} width={30} height={30} />
-          </div>
-        </Link>
+        <div className="flex gap-1 items-center w-full">
+          <h1 className="font-bold text-red-400 lg:text-2xl text-lg">
+            Dīəgnōsəs
+          </h1>
+          <Image src={Logo} width={30} height={30} />
+        </div>
 
         <div className="flex gap-8  max-lg:gap-5 items-center max-md:hidden text-slate-100 font-bold justify-center">
           {Links.map((link, index) => {
