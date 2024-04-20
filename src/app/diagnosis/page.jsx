@@ -13,6 +13,11 @@ const Page = () => {
 
   const handleAnswerChange = (key, value) => {
     setAnswers((prevAnswers) => ({ ...prevAnswers, [key]: value }));
+    //rest parameter memungkinkan sebuah fungsi untuk menerima sejumlah
+    //variabel argumen sebagai array. Ini memungkinkan kita untuk menangani
+    //sejumlah argumen yang tidak terbatas pada saat fungsi dipanggil.
+    //Rest parameter ditandai dengan tanda titik tiga ( ... ) diikuti oleh
+    //nama parameter dalam definisi fungsi.
     setError("");
   };
 
