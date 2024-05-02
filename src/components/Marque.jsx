@@ -15,14 +15,14 @@ const Marquee = () => {
         <ol className="flex gap-3">
           <li>Filbert Maheswara</li>
           <li>Muhammad Prama Maulana</li>
-          <li>Bintang Nugroho</li>
+          <li>Bintang Nugroho Adi Saputra</li>
           <li>Aditya Dharma</li>
           <li>Dheny Puji Laksono</li>
-          <li>Faisal</li>
+          <li>Faisal Sidauruk</li>
           <li>Rendy</li>
           <li>Muhammad Rizki Ade Saputra</li>
-          <li>Sanu</li>
-          <li>Dinu</li>
+          <li>Sanu Octovianto</li>
+          <li>Dinu Kurniawan Cahyadi</li>
         </ol>
       </div>
     </marquee>
