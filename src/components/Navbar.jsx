@@ -7,6 +7,7 @@ import Logo from "@/images/cancer-logo.png";
 import useMenuActive from "@/hooks/useMenuActive";
 import { useState, useEffect } from "react";
 import { RiArrowUpLine } from "react-icons/ri";
+import { FaGithub } from "react-icons/fa";
 const Navbar = () => {
   const [scrollToTop, setScrollToTop] = useState(false);
 
@@ -46,15 +47,15 @@ const Navbar = () => {
           <RiArrowUpLine className="p-2 text-white" />
         </div>
       )}
-      <nav className="flex items-center justify-between">
-        <div className="flex gap-1 items-center w-full">
+      <nav className="flex items-center justify-between ">
+        <div className="flex gap-1 items-center ">
           <h1 className="font-bold text-red-400 lg:text-2xl text-lg">
             Dīəgnōsəs
           </h1>
-          <Image src={Logo} width={30} height={30} />
+          <Image src={Logo} width={30} />
         </div>
 
-        <div className="flex gap-8  max-lg:gap-5 items-center max-md:hidden text-slate-100 font-bold justify-center">
+        <div className="flex gap-8  w-full max-lg:gap-5 items-center max-md:hidden text-slate-100 font-bold justify-center">
           {Links.map((link, index) => {
             const isActive = useMenuActive(link.route);
             return (
@@ -68,7 +69,10 @@ const Navbar = () => {
             );
           })}
         </div>
-        <div className="mt-2">
+        <div className="flex items-center justify-center gap-3">
+          <Link href="https://github.com/rendy278/sistemPakar.git">
+            <FaGithub size={30} />
+          </Link>
           <MobileMenu />
         </div>
       </nav>

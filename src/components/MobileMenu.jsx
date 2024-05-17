@@ -10,7 +10,7 @@ const Mobilemenu = () => {
     setOpenMobileMenu(!openMobileMenu);
   };
   return (
-    <div>
+    <div className="mt-2">
       <label className="swap swap-rotate md:hidden">
         <input
           type="checkbox"
