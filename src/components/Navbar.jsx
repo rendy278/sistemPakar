@@ -8,6 +8,7 @@ import useMenuActive from "@/hooks/useMenuActive";
 import { useState, useEffect } from "react";
 import { RiArrowUpLine } from "react-icons/ri";
 import { FaGithub } from "react-icons/fa";
+import NightMode from "./NightMode";
 const Navbar = () => {
   const [scrollToTop, setScrollToTop] = useState(false);
 
@@ -73,6 +74,7 @@ const Navbar = () => {
           <Link href="https://github.com/rendy278/sistemPakar.git">
             <FaGithub size={30} />
           </Link>
+          <NightMode />
           <MobileMenu />
         </div>
       </nav>

@@ -40,13 +40,22 @@ const Page = () => {
   const calculateResult = () => {
     const sum = Object.values(answers).reduce((acc, curr) => {
       if (curr === "Ya") return acc + 1;
-      if (curr === "Tidak Yakin") return acc + 0.5;
+      if (curr === "Mungkin") return acc + 0.5;
       return acc;
     }, 0);
 
-    return sum > 10
-      ? "Anda mengalami gejala yang mengindikasikan kemungkinan penyakit kanker. Segera konsultasikan dengan dokter untuk diagnosis dan perawatan lebih lanjut."
-      : "Anda tidak mengalami gejala yang mengindikasikan penyakit kanker. Tetaplah memperhatikan kesehatan Anda secara umum.";
+    return sum > 10 ? (
+      <p className="font-bold  dark:text-slate-100">
+        Anda mengalami gejala yang mengindikasikan kemungkinan penyakit kanker.
+        Segera konsultasikan dengan dokter untuk diagnosis dan perawatan lebih
+        lanjut.
+      </p>
+    ) : (
+      <p className="font-bold  dark:text-slate-100">
+        Anda tidak mengalami gejala yang mengindikasikan penyakit kanker.
+        Tetaplah memperhatikan kesehatan Anda secara umum.
+      </p>
+    );
   };
 
   const handleSubmit = (e) => {
@@ -66,9 +75,9 @@ const Page = () => {
 
   return (
     <section className="mx-auto px-5 py-5">
-      <div className="flex flex-col h-screen justify-center gap-4 items-center">
+      <div className="flex flex-col h-screen dark:text-slate-100 justify-center gap-4 items-center">
         <Title title="Diagnosis Penyakit Kanker" />
-        <p className="text-red-500 font-bold text-center text-xl">
+        <p className="text-red-500 dark:text-red-400 font-bold text-center text-xl">
           Ayo Cari Tahu Apakah Ada Penyakit Kanker Pada Tubuh Anda atau tidak
           dengan mengisi Kuis di bawah ini
         </p>
@@ -92,7 +101,7 @@ const Page = () => {
                         if (answer === "Mungkin") setConfirmationVisible(true);
                         else setConfirmationVisible(false);
                       }}
-                      className={`bg-red-500 text-white px-4 py-2 rounded mr-4 ${
+                      className={`bg-red-500  text-white px-4 py-2 rounded mr-4 ${
                         answers[questions[currentQuestionIndex].key] ===
                           answer && "bg-red-600"
                       }`}
@@ -101,14 +110,18 @@ const Page = () => {
                     </button>
                   ))}
                 </div>
-                {error && <p className="text-red-500 mt-2">{error}</p>}
+                {error && (
+                  <p className="text-red-500 dark:text-red-400 font-bold mt-2">
+                    {error}
+                  </p>
+                )}
               </div>
               <div className="flex justify-center gap-4">
                 {currentQuestionIndex > 0 && (
                   <button
                     type="button"
                     onClick={handleBack}
-                    className="bg-gray-500 text-white px-4 py-2 rounded"
+                    className="bg-gray-500 dark:bg-slate-600 text-white px-4 py-2 rounded"
                   >
                     Kembali
                   </button>
@@ -131,7 +144,7 @@ const Page = () => {
             <div className="mx-auto items-center">
               <div className="mt-8">
                 {resultVisible && (
-                  <p className="font-bold text-red-500 flex flex-col text-lg text-center gap-3">
+                  <p className="font-bold text-red-500 dark:text-red-400 flex flex-col text-lg text-center gap-3">
                     Hasil Diagnosis: <br />
                     <span className="text-gray-800">{diagnosis}</span>
                   </p>
@@ -142,7 +155,7 @@ const Page = () => {
                   <button
                     type="button"
                     onClick={handleReset}
-                    className="bg-gray-500 text-white px-4 py-2 rounded mt-4"
+                    className="bg-red-500 text-white px-4 py-2 rounded mt-4"
                   >
                     Reset
                   </button>
@@ -161,7 +174,7 @@ const Page = () => {
                     <button
                       type="button"
                       onClick={handleBack}
-                      className="bg-gray-500 text-white btn-md mt-4 rounded-md"
+                      className="bg-gray-500 dark:bg-slate-600 text-white btn-md mt-4 rounded-md"
                     >
                       Kembali
                     </button>

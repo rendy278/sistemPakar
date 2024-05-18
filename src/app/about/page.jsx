@@ -6,9 +6,9 @@ const page = () => {
   return (
     <section className="mx-auto pt-20 pb-5 px-5">
       <div className="flex h-full md:h-screen lg:flex-row flex-col-reverse md:flex-row w-full  gap-4 items-center justify-between">
-        <div className="w-full flex flex-col gap-3 justify-start">
+        <div className="w-full dark:text-slate-100 flex flex-col gap-3 justify-start">
           <Title title="Tentang Kami" />
-          <p className="">
+          <p>
             Website ini dibuat untuk bertujuan mendiagnosis gejala penyakit
             kanker di dalam tubuh dan ayo mari kita hidup sehat dari sekarang
             karena mencegah lebih baik dari pada mengobati
@@ -27,7 +27,7 @@ const page = () => {
             digunakan dalam bidang kecerdasan buatan, terutama dalam sistem
             berbasis pengetahuan.
           </p>
-          <h1 className="text-lg font-bold text-red-500">
+          <h1 className="text-lg font-bold text-red-500 dark:text-red-400">
             Website ini dibuat menggunakan : React js, Next Js dan Tailwind Css
           </h1>
         </div>

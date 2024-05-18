@@ -64,7 +64,7 @@ const Page = () => {
   return (
     <section className="sm:mx-auto sm:w-full sm:max-w-[1200px] py-20 px-3">
       <div className="h-full md:h-screen flex-col px-4 py-6  shadow-lg rounded-md sm:px-10">
-        <div className="mb-10 text-gray-900 w-full">
+        <div className="mb-10 text-gray-900 dark:text-slate-100 w-full">
           <h1 className="text-xl lg:text-3xl md:text-2xl  font-bold ">
             Contact us!
           </h1>

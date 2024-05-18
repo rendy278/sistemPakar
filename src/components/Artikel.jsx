@@ -6,10 +6,10 @@ const Artikel = () => {
     <section className="py-10 px-5">
       <div className="flex lg:flex-row md:flex-row flex-col w-full items-center justify-between gap-4">
         <div className="left">
-          <div className="title text-3xl underline font-bold text-red-500">
+          <div className="title text-3xl underline font-bold ">
             <Title title="Apa Itu Penyakit Kanker ?" />
           </div>
-          <article className="flex lg:text-xl md:text-sm text-base flex-col gap-3 mt-4">
+          <article className="flex lg:text-xl md:text-sm text-base dark:text-slate-100 flex-col gap-3 mt-4">
             <p>
               Kanker adalah kondisi di mana sel-sel tubuh tumbuh secara tidak
               terkendali dan berkembang secara abnormal. Sel-sel kanker dapat
