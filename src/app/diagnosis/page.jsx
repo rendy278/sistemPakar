@@ -13,11 +13,6 @@ const Page = () => {
 
   const handleAnswerChange = (key, value) => {
     setAnswers((prevAnswers) => ({ ...prevAnswers, [key]: value }));
-    //rest parameter memungkinkan sebuah fungsi untuk menerima sejumlah
-    //variabel argumen sebagai array. Ini memungkinkan kita untuk menangani
-    //sejumlah argumen yang tidak terbatas pada saat fungsi dipanggil.
-    //Rest parameter ditandai dengan tanda titik tiga ( ... ) diikuti oleh
-    //nama parameter dalam definisi fungsi.
     setError("");
   };
 
@@ -45,13 +40,13 @@ const Page = () => {
     }, 0);
 
     return sum > 10 ? (
-      <p className="font-bold  dark:text-slate-100">
+      <p className="font-bold text-base dark:text-slate-100">
         Anda mengalami gejala yang mengindikasikan kemungkinan penyakit kanker.
         Segera konsultasikan dengan dokter untuk diagnosis dan perawatan lebih
         lanjut.
       </p>
     ) : (
-      <p className="font-bold  dark:text-slate-100">
+      <p className="font-bold text-green-500 dark:text-green-400">
         Anda tidak mengalami gejala yang mengindikasikan penyakit kanker.
         Tetaplah memperhatikan kesehatan Anda secara umum.
       </p>
@@ -101,7 +96,7 @@ const Page = () => {
                         if (answer === "Mungkin") setConfirmationVisible(true);
                         else setConfirmationVisible(false);
                       }}
-                      className={`bg-red-500  text-white px-4 py-2 rounded mr-4 ${
+                      className={`bg-red-500 text-white px-4 py-2 rounded mr-4 ${
                         answers[questions[currentQuestionIndex].key] ===
                           answer && "bg-red-600"
                       }`}
@@ -146,7 +141,9 @@ const Page = () => {
                 {resultVisible && (
                   <p className="font-bold text-red-500 dark:text-red-400 flex flex-col text-lg text-center gap-3">
                     Hasil Diagnosis: <br />
-                    <span className="text-gray-800">{diagnosis}</span>
+                    <span className="text-gray-800 dark:text-gray-100">
+                      {diagnosis}
+                    </span>
                   </p>
                 )}
               </div>
@@ -164,7 +161,7 @@ const Page = () => {
               {!resultVisible && (
                 <div className="py-3">
                   <p>Apakah Anda yakin dengan jawaban Anda?</p>
-                  <div className="flex justify-between mx-auto items-center ">
+                  <div className="flex justify-between mx-auto items-center">
                     <button
                       type="submit"
                       className="bg-red-500 text-white btn-md hover:bg-red-600 mt-4 rounded-md"
