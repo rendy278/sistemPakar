@@ -1,12 +1,29 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BsMoonStars, BsSun } from "react-icons/bs";
+
 const NightMode = () => {
   const [isNightMode, setIsNightMode] = useState(false);
 
+  useEffect(() => {
+    const savedNightMode = localStorage.getItem("nightMode");
+    if (savedNightMode === "true") {
+      setIsNightMode(true);
+      document.documentElement.classList.add("dark");
+    }
+  }, []);
+
   const toggleNightMode = () => {
-    setIsNightMode(!isNightMode);
-    document.documentElement.classList.toggle("dark");
+    setIsNightMode((prevMode) => {
+      const newMode = !prevMode;
+      localStorage.setItem("nightMode", newMode);
+      if (newMode) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+      return newMode;
+    });
   };
 
   return (

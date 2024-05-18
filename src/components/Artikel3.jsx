@@ -7,7 +7,7 @@ const Artikel3 = () => {
       <div className="flex flex-col w-full items-center justify-start gap-4">
         <div className="left">
           <Title title="Gejala gejala yang menyebabkan kanker!!" />
-          <article className="flex lg:text-xl md:text-sm text-slate-100 text-base flex-col gap-3 mt-4">
+          <article className="flex lg:text-xl md:text-sm dark:text-slate-100 text-base flex-col gap-3 mt-4">
             {Gejala.map((item) => (
               <div key={item.id} className="gejala-item">
                 <h2 className="gejala-title font-bold">{`${item.id} ${item.title}`}</h2>
