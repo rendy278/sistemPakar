@@ -20,7 +20,7 @@ const Marquee = () => {
           <li>Dheny Puji Laksono</li>
           <li>Faisal Sidauruk</li>
           <li>Rendy</li>
-          <li>Muhammad Rizki Ade Saputra</li>
+          <li>Muhammad Rizki Ade Setiawan</li>
           <li>Sanu Octovianto</li>
           <li>Dinu Kurniawan Cahyadi</li>
         </ol>
