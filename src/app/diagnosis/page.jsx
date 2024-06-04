@@ -43,7 +43,7 @@ const Page = () => {
     }, 0);
 
     return sum > 10 ? (
-      <div className="h-fit overflow-hidden  md:h-96 md:overflow-auto lg:h-60 lg:overflow-auto ">
+      <div className="  h-96 overflow-auto lg:h-60 lg:overflow-auto ">
         <p className="font-bold text-base dark:text-slate-100">
           Anda mengalami gejala yang mengindikasikan kemungkinan penyakit
           kanker. Segera konsultasikan dengan dokter untuk diagnosis dan
@@ -64,7 +64,7 @@ const Page = () => {
         </div>
       </div>
     ) : (
-      <div className="h-fit overflow-hidden md:h-96 md:overflow-auto lg:h-60 lg:overflow-auto ">
+      <div className="h-96 overflow-auto  lg:h-60 lg:overflow-auto ">
         <p className="font-bold text-green-500 dark:text-green-400">
           Anda tidak mengalami gejala yang mengindikasikan penyakit kanker.
           Tetaplah memperhatikan kesehatan Anda secara umum.
