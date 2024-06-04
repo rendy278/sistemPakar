@@ -6,6 +6,9 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] });
 export const metadata = {
   title: "Diagnosa penyakit kanker",
   description: "sistem pakar",
+  icons: {
+    icon: "/cancer-logo.png", // /public path
+  },
 };
 export default function RootLayout({ children }) {
   return (

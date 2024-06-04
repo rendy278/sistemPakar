@@ -3,7 +3,7 @@ import Link from "next/link";
 import MobileMenu from "./MobileMenu";
 import Image from "next/image";
 import { Links } from "../constants/links";
-import Logo from "@/images/cancer-logo.png";
+import Logo from "../../public//cancer-logo.png";
 import useMenuActive from "@/hooks/useMenuActive";
 import { useState, useEffect } from "react";
 import { RiArrowUpLine } from "react-icons/ri";
