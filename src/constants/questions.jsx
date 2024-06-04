@@ -1,92 +1,74 @@
 export const questions = [
   {
     id: 1,
-    text: "1. Apakah Anda mengalami batuk persisten atau air liur berwarna darah?",
-    key: "batukBerwarnaDarah",
+    text: "1. Apakah Anda sering mengalami rasa lelah yang berkepanjangan tanpa alasan yang jelas?",
   },
   {
     id: 2,
-    text: "2. Apakah Anda mengalami perubahan kebiasaan buang air besar?",
-    key: "perubahanBuangAirBesar",
+    text: "2. Apakah Anda mengalami perubahan kebiasaan buang air besar atau buang air kecil?",
   },
   {
     id: 3,
     text: "3. Apakah Anda menemukan darah pada tinja?",
-    key: "darahPadaTinja",
   },
   {
     id: 4,
-    text: "4. Apakah Anda mengalami gejala anemia yang tidak dapat dijelaskan?",
-    key: "gejalaAnemia",
+    text: "4. Apakah Anda sering merasa nyeri atau tidak nyaman di bagian tubuh tertentu?",
   },
   {
     id: 5,
-    text: "5. Apakah Anda menemukan benjolan pada payudara?",
-    key: "benjolanPayudara",
+    text: "5. Apakah Anda mengalami perubahan pada kulit, seperti munculnya benjolan, perubahan warna, atau luka yang tidak kunjung sembuh?",
   },
   {
     id: 6,
-    text: "6. Apakah Anda menemukan benjolan di testis?",
-    key: "benjolanTestis",
+    text: "6. Apakah Anda mengalami kesulitan menelan atau merasa ada sesuatu yang tersangkut di tenggorokan?",
   },
   {
     id: 7,
-    text: "7. Apakah Anda mengalami perubahan pada buang air kecil?",
-    key: "perubahanBuangAirKecil",
+    text: "7. Apakah Anda sering mengalami batuk yang tidak kunjung sembuh atau suara serak yang berkepanjangan?",
   },
   {
     id: 8,
     text: "8. Apakah Anda menemukan darah dalam urine?",
-    key: "darahDalamUrine",
   },
   {
     id: 9,
-    text: "9. Apakah Anda mengalami suara serak?",
-    key: "suaraSerak",
+    text: "9. Apakah Anda sering merasa sakit kepala yang tidak biasa atau penglihatan kabur?",
   },
   {
     id: 10,
     text: "10. Apakah Anda menemukan benjolan atau kelenjar yang bengkak?",
-    key: "benjolanKelenjarBengkak",
   },
   {
     id: 11,
     text: "11. Apakah Anda menemukan perubahan yang jelas pada kutil atau tahi lalat?",
-    key: "perubahanKutilTahiLalat",
   },
   {
     id: 12,
     text: "12. Apakah Anda mengalami gangguan pencernaan atau kesulitan menelan?",
-    key: "gangguanPencernaan",
   },
   {
     id: 13,
-    text: "13. Apakah Anda menemukan pendarahan atau keputihan vagina yang tidak biasa?",
-    key: "pendarahanVagina",
+    text: "13. Apakah Anda pernah mengalami gangguan makan atau merasa kenyang lebih cepat dari biasanya?",
   },
   {
     id: 14,
-    text: "14. Apakah Anda mengalami penurunan berat badan yang tak terduga, keringat malam, atau demam?",
-    key: "penurunanBeratBadan",
+    text: "14. Apakah Anda sering merasa mual atau muntah tanpa alasan yang jelas?",
   },
   {
     id: 15,
-    text: "15. Apakah Anda mengalami gatal terus menerus di area anal atau genital?",
-    key: "gatalAnalGenital",
+    text: "15. Apakah Anda memiliki riwayat keluarga dengan penyakit kanker?",
   },
   {
     id: 16,
     text: "16. Apakah Anda mendapatkan luka yang tidak kunjung sembuh?",
-    key: "lukaTidakSembuh",
   },
   {
     id: 17,
     text: "17. Apakah Anda mengalami sakit kepala yang cukup extream?",
-    key: "sakitKepala",
   },
   {
     id: 18,
-    text: "18. Apakah Anda mengalami nyeri punggung, nyeri panggul, kembung, atau gangguan pencernaan?",
-    key: "nyeriPunggungPanggul",
+    text: "18. Apakah Anda mengalami kesulitan menelan atau merasa ada sesuatu yang tersangkut di tenggorokan?",
   },
 ];

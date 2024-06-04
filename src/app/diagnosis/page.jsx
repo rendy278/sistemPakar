@@ -14,14 +14,14 @@ const Page = () => {
   const [resultVisible, setResultVisible] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const handleAnswerChange = (key, value) => {
-    setAnswers((prevAnswers) => ({ ...prevAnswers, [key]: value }));
+  const handleAnswerChange = (id, value) => {
+    setAnswers((prevAnswers) => ({ ...prevAnswers, [id]: value }));
     setError("");
   };
 
   const handleNext = () => {
-    const currentKey = questions[currentQuestionIndex].key;
-    if (!answers[currentKey]) {
+    const currentQuestionId = questions[currentQuestionIndex].id;
+    if (!answers[currentQuestionId]) {
       setError("Silakan isi jawaban.");
       return;
     }
@@ -43,7 +43,7 @@ const Page = () => {
     }, 0);
 
     return sum > 10 ? (
-      <div className="  h-96 overflow-auto lg:h-60 lg:overflow-auto ">
+      <div className="h-96 overflow-auto lg:h-60 lg:overflow-auto ">
         <p className="font-bold text-base dark:text-slate-100">
           Anda mengalami gejala yang mengindikasikan kemungkinan penyakit
           kanker. Segera konsultasikan dengan dokter untuk diagnosis dan
@@ -52,8 +52,8 @@ const Page = () => {
         <div className="mt-4">
           <h2 className="text-lg font-bold">Rekomendasi Perawatan:</h2>
           <div className="text-start ml-5 mt-2 ">
-            {treatment.map((item, index) => (
-              <ul key={index}>
+            {treatment.map((item) => (
+              <ul key={item.id}>
                 <span className="flex gap-3">
                   {item.id} {item.title}
                 </span>
@@ -119,7 +119,7 @@ const Page = () => {
           {currentQuestionIndex < questions.length ? (
             <>
               <div className="mb-4">
-                <label className="block mb-2 text-lg font-semibold text-center">
+                <label className="block mb-2 text-lg font-semibold text-center dark:text-white">
                   {questions[currentQuestionIndex].text}
                 </label>
                 <div className="flex mt-4 justify-center">
@@ -129,14 +129,14 @@ const Page = () => {
                       type="button"
                       onClick={() => {
                         handleAnswerChange(
-                          questions[currentQuestionIndex].key,
+                          questions[currentQuestionIndex].id,
                           answer
                         );
                         if (answer === "Mungkin") setConfirmationVisible(true);
                         else setConfirmationVisible(false);
                       }}
                       className={`bg-red-500 text-white px-4 py-2 rounded mr-4 ${
-                        answers[questions[currentQuestionIndex].key] ===
+                        answers[questions[currentQuestionIndex].id] ===
                           answer && "bg-red-600"
                       }`}
                     >
